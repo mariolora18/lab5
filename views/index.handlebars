@@ -10,7 +10,8 @@
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/bootstrap-theme.css" rel="stylesheet">
 <link href="css/hci-friends.css" rel="stylesheet">
-	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -19,15 +20,18 @@
 
 	<h1>My HCI Friends</h1>
 
-	{{#each friends}}
 	<div class ="friends">
-		<img src="{{imageURL}}">
-		<h4>{{name}}</h4>
-		<p>{{description}}</p>
+	{{#each friends}}
 
-	</div>
-	<hr>
+		<img src="{{imageURL}}" class="img-responsive img-rounded">
+		<a href="#name">Cick here</a>
+		<h4 >{{name}}</h4>
+		<p>{{description}}</p>
+		<hr>
 	{{/each}}
+	</div>
+	
+
 
 
 
